@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist">
+    <link rel="stylesheet" href="css/estilo-Carrito.css">
+    <title>Document</title>
+</head>
+<body>
+  <script src="js/script-carrito.js"></script>
+    <!--CDN JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!--Barra de navegación-->
+    <nav class="navbar navbar-expand-lg  bg-primary" >
+        <div class="container-fluid" >
+          <a class="navbar-brand" href="inicio.html">
+            <img src="img/logo.png" class="logo" alt="Logo" style="width: 60px; height: 50px; ">
+            Salón Yaqué</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: auto;">
+              <li class="nav-item">
+                <a class="nav-link active" style="padding-right: 40px;"  aria-current="page" href="inicio.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="producto.html">Bebidas</a></li>
+                  <li><a class="dropdown-item" href="producto.html">Comestibles</a></li>
+                  <li><a class="dropdown-item" href="producto.html">Limpieza</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Otros
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="contacto.html">Contactos</a></li>
+                  <li><a class="dropdown-item" href="sobre-nosotros.html">Sobre nosotros</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">proximamente...</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" style="border-color: black; color: black; background-color: rgb(197, 190, 190);" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" style="color: rgb(74, 255, 2);" type="submit">Search</button>
+            </form>
+            <!--Boton para ir a pag. de carrito-->
+        <a href="carrito.html"><img src="img/anadir-al-carrito.png" class="icono rounded float-end" alt=""></a>
+            <!--Creacion de modal para inicio de sesión-->
+        <button type="button" class="btn float-end" style="height: 60px; margin: -7px;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><img src="img/inicio-sesion.png" alt="" class="icono"></button>
+      
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Nombre y apellido:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Calle/Avenida:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Número:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Télefono de contacto:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="message-text" class="col-form-label">Referencia de dirección adicional (opcional):</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Registrarse</button>
+              </div>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+    </nav>
+      
+     
+      <!--Tarjetas de articulo-->
+      <div class="card mb-3 tar-carrito mt-3" >
+        <img src="img/borrar.png" alt="" class="btn-cerrar" onclick="cerrarTarjeta(this)">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/image2.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Nombre del producto</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">El valor de este producto es de:$300</small></p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card mt-3 tar-carrito" >
+        <img src="img/borrar.png" alt="" class="btn-cerrar" onclick="cerrarTarjeta(this)">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/image2.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Nombre del producto</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">El valor de este producto es de:$300</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mt-3 tar-carrito" >
+        <img src="img/borrar.png" alt="" class="btn-cerrar" onclick="cerrarTarjeta(this)">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/image2.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Nombre del producto</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">El valor de este producto es de:$300</small></p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="card mt-3 tar-carrito" >
+        <img src="img/borrar.png" alt="" class="btn-cerrar" onclick="cerrarTarjeta(this)">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/image2.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Nombre del producto</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">El valor de este producto es de:$300</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card mt-3 tar-carrito" >
+        <img src="img/borrar.png" alt="" class="btn-cerrar" onclick="cerrarTarjeta(this)">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/image2.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Nombre del producto</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">El valor de este producto es de:$300</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mt-3 tar-carrito" >
+        <img src="img/borrar.png" alt="" class="btn-cerrar" onclick="cerrarTarjeta(this)">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/image2.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Nombre del producto</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">El valor de este producto es de:$300</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mt-3 mb-3 tar-carrito" >
+        <img src="img/borrar.png" alt="" class="btn-cerrar" onclick="cerrarTarjeta(this)">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/image2.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Nombre del producto</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">El valor de este producto es de:$300</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Advertencia-->
+      <div class="alert alerta" role="alert">
+        Importante: El pago se realiza al retirar la compra en el local
+      </div>
+      <br><br><br>
+
+
+      <!--Botones-->
+      <div class="btn-car">
+        <button class="btn btn1" onclick="Alerta()">Comprar</button>
+        <!-- Alerta de compra -->
+        <div id="AlertaC" class="ventana-emergente">
+            <span class="cerrar" onclick="cerrarAlerta()">&times;</span>
+            <p>¡Gracias por su compra!</p>
+            <small>puede retirarla en el local cuando desee</small>
+        </div>
+        <a href="producto.html" class="btn btn2 ">Agregar producto</a>
+        <a href="inicio.html" class="btn btn3">Cancelar</a>
+      </div>
+    
+
+
+      
+</body>
+</html>

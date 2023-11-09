@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.card{
+    margin: auto;
+}
+body{
+    overflow-x: hidden;
+    background-color: rgba(66, 91, 112, 0.527);
+    background-image: url(../img/logo.png);
+}
+.btnmodal{
+    height: 60px; 
+    margin: -7px;
+}
+.titulo{
+    position: absolute; 
+    left: 45%; 
+    margin-top: 12px;
+}
+.header{
+    height: 52px;
+    background-color: white;
+}
+.logo{
+    transition: all 0.3s;
+    width: 50px;
+    height: auto;
+}
+.logo:hover{
+    transform: scale(1.2);
+}
+.title{
+    position: absolute;
+    right: 40%;
+    left: 40%;
+    top: 0;
+    transform:translateX(-50%,50%) ;
+}
+.tarjeta{
+    width: 100%;
+}
+.row-footer{
+    display: flex;
+    
+}
+.col-footer{
+    margin-left: 70px;
+}
+.col-footer p a{
+    color: rgb(27, 27, 27);
+}
+.hr{
+    background-color: #FFD600;
+    width: 90%;
+    height: 4px;
+    margin-top: 130px;
+}
+.icon{
+    justify-content: space-between;
+    width: 50px;
+    margin-top: 5px;
+}
+.icono{
+    justify-content: space-between;
+    width: 45px;
+    margin: 3px;
+    margin-right: 10px;   
+}
+footer{
+    background-image: linear-gradient(#006eff, rgb(89, 222, 255));
+    height: 400px;
+}
+/*Responsive*/
+
+@media (max-width: 768px) { 
+
+    .card{
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .row{
+        margin-bottom: -50px;
+    }
+    .col-footer{
+        margin-left: 30px;
+    }
+    .icon{
+        margin-right: 10px;
+    }
+}
+
+
+

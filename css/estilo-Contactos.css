@@ -1,0 +1,76 @@
+body{
+    overflow-x: hidden;
+    background-color: rgba(66, 91, 112, 0.527);
+    background-image: url(../img/logo.png);
+}
+.icono{
+    justify-content: space-between;
+    width: 45px;
+    margin: 3px;
+    margin-right: 10px;   
+}
+.portada{
+    width: 100%;
+    height: 18rem;
+}
+.flecha{
+    width: 30px;
+    height: 30px;
+}
+.logo-cont{
+    width: 300px;
+    height: 300px;
+    margin-top: 15%;
+    margin-left: 25%;
+
+}
+.campo{
+    margin: 10px;
+    
+}
+
+footer{
+    background-image: linear-gradient(#006eff, rgb(89, 222, 255));
+    height: 400px;
+    
+}
+.row-footer{
+    display: flex;
+    
+}
+.col-footer{
+    margin-left: 70px;
+}
+.col-footer p a{
+    color: rgb(27, 27, 27);
+}
+.hr{
+    background-color: #FFD600;
+    width: 90%;
+    height: 4px;
+    margin-top: 130px;
+}
+.icon{
+    justify-content: space-between;
+    width: 50px;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) { 
+    .logo-cont{
+        display: none;
+    }
+    .search{
+        width: 100px;
+    }
+    .col-footer{
+        margin-left: 30px;
+    }
+    .campo{
+        width: 70%;
+    }
+    .form-control{
+        width: 300%;
+    }
+    
+}

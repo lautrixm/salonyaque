@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist">
+    <link rel="stylesheet" href="css/estilo-Inicio.css">
+    <title>Document</title>
+</head>
+<body >
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <div class="header">
+        <!--Botón para inicio de sesión-->
+        <button id="btnmodal" type="button" class="btn float-end btnmodal" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+          <img src="img/inicio-sesion.png" alt="" class="icono">
+        </button>
+        <!--Modal para inicio de sesión-->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" style="background-image: linear-gradient(#006eff, rgb(89, 222, 255));">
+              <h1 class="modal-title fs-5"  id="exampleModalLabel">Inicio de sesión</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Nombre y apellido:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Calle/Avenida:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Número:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Télefono de contacto:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Referencia de dirección adicional (opcional):</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary">Registrarse</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h5 class="titulo">Inicio</h5>
+      <!--Boton para ir a pag. de carrito-->
+        <a href="carrito.html"><img src="img/anadir-al-carrito.png" class="icono rounded float-end" alt=""></a>
+      </div>
+  <!--Barra de navegación-->
+  <nav class="navbar navbar-expand-lg  bg-primary" data-bs-theme="dark">
+    <div class="container-fluid" >
+      <a class="navbar-brand" href="inicio.html">
+        <img src="img/logo.png" class="logo" alt="Logo" style="width: 60px; height: 50px; ">
+        Salón Yaqué</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: auto;">
+          <li class="nav-item">
+            <a class="nav-link active" style="padding-right: 40px;"  aria-current="page" href="inicio.html">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="producto.html">Bebidas</a></li>
+              <li><a class="dropdown-item" href="producto.html">Comestibles</a></li>
+              <li><a class="dropdown-item" href="producto.html">Limpieza</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#tarjetas">Otro...</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Otros
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="contacto.html">Contactos</a></li>
+              <li><a class="dropdown-item" href="sobre-nosotros.html">Sobre nosotros</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">proximamente...</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" style="color: black; background-color: rgb(197, 190, 190);" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" style="color: rgb(74, 255, 2);" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+      <!--Slider Automático-->
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="img/slider1.png" class="d-block w-100" alt="..." style="height: 25rem;">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="img/slider2.png" class="d-block w-100" alt="..." style="height: 25rem;">
+      </div>
+      <div class="carousel-item">
+        <img src="img/slider3.png" class="d-block w-100" alt="..." style="height: 25rem;">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+      <!--Tarjetas de producto Fila 1-->
+  <div class="container text-center" id="tarjetas">
+    <div class="row mt-5">
+      <!--columna 1-->
+      <div class="col">
+        <div class="card" style="width: 16rem;">
+          <img src="img/producto1.png" class="card-img-top" alt="..." style="height: 150px;">
+          <div class="card-body">
+            <h5 style="text-align: left;">Frutas y verduras</h5>
+            <p style="text-align: left;">¡¡Increíbles ofertas!!</p>
+            <a href="producto.html" class="btn btn-primary">Ver ofertas...</a>
+          </div>
+        </div>
+        <div class="card mt-5" style="width: 16rem;">
+          <img src="img/producto2.png" class="card-img-top" alt="..." style="height: 150px;">
+          <div class="card-body">
+            <h5 style="text-align: left;">Refrescos</h5>
+            <p style="text-align: left;">¡¡Increíbles ofertas!!</p>
+            <a href="producto.html" class="btn btn-primary">Ver ofertas...</a>
+          </div>
+        </div>
+      </div>
+      <!--columna 2-->
+      <div class="col">
+        <div class="card" style="width: 16rem;">
+          <img src="img/producto3.png" class="card-img-top" alt="..." style="height: 150px;">
+          <div class="card-body">
+            <h5 style="text-align: left;">Comestibles</h5>
+            <p style="text-align: left;">¡¡Increíbles ofertas!!</p>
+            <a href="producto.html" class="btn btn-primary">Ver ofertas...</a>
+          </div>
+        </div>
+        <div class="card mt-5" style="width: 16rem;">
+          <img src="img/producto4.png" class="card-img-top" alt="..." style="height: 150px;">
+          <div class="card-body">
+            <h5 style="text-align: left;">Productos de Limpieza</h5>
+            <p style="text-align: left;">¡¡Increíbles ofertas!!</p>
+            <a href="producto.html" class="btn btn-primary">Ver ofertas...</a>
+          </div>
+        </div> 
+      </div>
+      <!--columna 3-->
+      <div class="col">
+        <div class="card" style="width: 16rem;">
+          <img src="img/producto5.png" class="card-img-top" alt="..." style="height: 150px;">
+          <div class="card-body">
+            <h5 style="text-align: left;">Útiles escolares</h5>
+            <p style="text-align: left;">¡¡Increíbles ofertas!!</p>
+            <a href="producto.html" class="btn btn-primary">Ver ofertas...</a>
+          </div>
+        </div>
+        <div class="card mt-5" style="width: 16rem;">
+          <img src="img/producto6.png" class="card-img-top" alt="..." style="height: 150px;">
+          <div class="card-body">
+            <h5 style="text-align: left;">Carnes</h5>
+            <p style="text-align: left;">¡¡Increíbles ofertas!!</p>
+            <a href="producto.html" class="btn btn-primary">Ver ofertas...</a>
+          </div>
+        </div>
+      </div>
+      <!--columna 4-->
+      <div class="col">
+        <div class="card" style="width: 16rem;">
+          <img src="img/producto7.png" class="card-img-top" alt="..." style="height: 150px;">
+          <div class="card-body">
+            <h5 style="text-align: left;">Bebidas energeticas</h5>
+            <p style="text-align: left;">¡¡Increíbles ofertas!!</p>
+            <a href="producto.html" class="btn btn-primary">Ver ofertas...</a>
+          </div>
+        </div>
+        <div class="card mt-5" style="width: 16rem;">
+          <img src="img/producto8.png" class="card-img-top" alt="..." style="height: 150px;">
+          <div class="card-body">
+            <h5 style="text-align: left;">Golosinas</h5>
+            <p style="text-align: left;">¡¡Increíbles ofertas!!</p>
+            <a href="producto.html" class="btn btn-primary">Ver ofertas...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+     
+  <!--Pie de página-->
+  <footer class="mt-5">
+    <div class="row-footer">
+      <div class="col-footer">
+        <h5>Acerca de</h5>
+        <p><a href="sobre-nosotros.html">Historia del negocio</a></p>
+        <p><a href="#">Proveedores</a></p>
+        <p><a href="producto.html">Productos</a></p>
+        <p><a href="contacto.html">Contactos</a></p>
+      </div>
+      <div class="col-footer">
+        <h5>Clientes</h5>
+        <p><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Registrarse</a></p>
+      </div>
+    </div>
+    <div class="hr container"></div>
+    <div class="container">
+      <a href="https://www.instagram.com/"><img src="img/instagram.png" class="icon" alt=""></a>
+      <a href="https://www.facebook.com/?locale=es_LA"><img src="img/facebook.png" class="icon" alt=""></a>
+      <a href="https://web.whatsapp.com/"><img src="img/whatsapp.png" class="icon" alt=""></a>
+    </div>
+  </footer>
+</body>
+</html> 

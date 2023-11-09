@@ -1,0 +1,111 @@
+body{
+    overflow-x: hidden;
+    background-color: rgba(66, 91, 112, 0.527);
+    background-image: url(../img/logo.png);
+}
+.logo{
+    transition: all 0.3s;
+    width: 50px;
+    height: auto;
+}
+.icono{
+    justify-content: space-between;
+    width: 45px;
+    margin: 3px;
+    margin-right: 10px;   
+}
+.articulo{
+    width: 100%;
+    height: 350px;
+    margin: 5px;
+}
+.botones{
+    position: absolute;
+    bottom: 1px;
+    margin: 10px;
+}
+.precio{
+    position: absolute;
+    right: 5%;
+    font-size: 20px;
+}
+.titulo{
+    width: 80%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+}
+.hr{
+    width: 90%;
+    margin: auto;
+    height: 4px;
+    background-color: #FFD600;
+}
+.foto{
+    width: 95%; 
+    height: 100%;
+    transition: all 0.3s;
+
+}
+.foto:hover{
+    transform: scale(1.2);
+    box-shadow:0 0 50px #000000 
+}
+
+/*Estilo de alertas*/
+.ventana-emergente {
+    display: none;
+    position: absolute;
+    background-color: #18d828;
+    width: 500px;
+    padding: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border: 3px solid #12a80d;
+    z-index: 1;
+}
+
+.cerrar {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.ventana-emergente p {
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .articulo{
+        width: 95%;
+        height: 110%;
+        margin: 7px;
+    }
+    .card-title{
+        margin-top: 35%;
+    }
+    .card-text{
+        margin-bottom: 10%;
+    }
+    .precio{
+        position: absolute;
+        top: 47%;
+        left: 5%;
+    }
+    .ventana-emergente {
+        width: 200px;
+    }
+    .botones{
+        display: flex;
+        margin: -3px;
+        margin-left: 5px;
+    }
+    .btn{
+         margin-left: 10px;
+    }
+    
+}

@@ -1,0 +1,137 @@
+body{
+    overflow-x: hidden;
+    background-color: rgba(66, 91, 112, 0.527);
+    background-image: url(../img/logo.png);
+}
+.logo{
+    transition: all 0.3s;
+    width: 50px;
+    height: auto;
+}
+.icono{
+    justify-content: space-between;
+    width: 45px;
+    margin: 3px;
+    margin-right: 10px;   
+}
+.tar-carrito{
+    margin:auto;
+    max-width: 90%;
+
+}
+.btn-car{
+    max-width: 90%;
+    margin: auto;
+
+}
+.btn-cerrar{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+.btn1{
+    width: 250px;
+    height: 45px;
+    transition: all 0.3s;
+    margin-bottom: 10px;
+    background-color: #24FF00;
+    border-color: #24FF00;
+}
+.btn1:hover{
+    transform: scale(1.2);
+    background-color: #166909;
+    border-color: #166909;
+}
+.btn2{
+    width: 250px;
+    height: 45px;
+    margin-left: 40px;
+    transition: all 0.3s;
+    margin-bottom: 10px;
+    background-color: #00ffea;
+    border-color: #00ffea;
+}
+.btn2:hover{
+    transform: scale(1.2);
+    background-color: #04a892;
+    border-color: #04a892;
+}
+.btn3{
+    width: 250px;
+    height: 45px;
+    position: absolute;
+    right: 5%;
+    transition: all 0.3s;
+    margin-bottom: 10px;
+    background-color: #ff1100;
+    border-color: #ff1100;
+}
+.btn3:hover{
+    transform: scale(1.2);
+    background-color: #790b0b;
+    border-color: #790b0b;
+}
+.alerta{
+    position: absolute;
+    right: 5%;
+    color: #FFD600;
+    border-color: #FFD600;
+    background-color: #725913;
+}
+
+
+.ventana-emergente {
+    display: none;
+    position: absolute;
+    background-color: #18d828;
+    width: 500px;
+    padding: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border: 3px solid #12a80d;
+    z-index: 1;
+}
+
+.cerrar {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.ventana-emergente p {
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+@media (max-width: 767px) {
+
+    .btn1{
+        margin-top: 7%;
+        margin-left: 10%;
+    }
+    .btn2{
+        margin-top: 7%;
+        margin-left: 10%;
+    }
+    .btn3{
+        margin-top: 25%;
+        margin-right: 14%;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .btn2{
+        margin-left: 3px;
+    }
+    .btn3{
+        width: 180px;
+    }
+}
